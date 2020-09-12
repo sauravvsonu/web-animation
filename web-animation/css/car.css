@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(to top, #1f62a1 0%, #330867 100%);
+    overflow-y: hidden;
+    display: flex;
+}
+
+.background {
+    height: 75vh;
+    width: 56vw;
+    background: url(/assets/Img_1.png);
+    border: 2px solid;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    margin: 5rem 0px 5rem 320px;
+    overflow: hidden;
+    box-shadow: 1px 1px 50px #00030d;
+    ;
+}
+
+.road {
+    height: 23vh;
+    width: 500%;
+    /* margin: 5rem; */
+    display: block;
+    background-image: url(/assets/Img_02.png);
+    position: absolute;
+    /* bottom: 19%; */
+    bottom: 0%;
+    left: 0%;
+    background-repeat-x: repeat;
+}
+
+.car img {
+    position: absolute;
+    bottom: 72px;
+    left: 30%;
+}
+
+@keyframes movement {
+    100% {
+        transform: translateX(-2950px);
+    }
+}
+
+@keyframes suspension {
+    100% {
+        transform: translateY(0px);
+    }
+    70% {
+        transform: translateY(-2px);
+    }
+    30% {
+        transform: translateY(2px);
+    }
+    0% {
+        transform: translateY(0px);
+    }
+}
+
+.moveright {
+    animation: movement 6s linear infinite;
+}
+
+.suspesion {
+    animation: suspension 1s linear infinite;
+}
+
+.text {
+    float: right;
+    width: 350px;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.txt {
+    opacity: .3;
+    height: 45%;
+    display: grid;
+    font-size: 25px;
+    letter-spacing: 2%;
+    text-transform: capitalize;
+    color: cornflowerblue;
+    align-content: space-between;
+}
+
+.drive {
+    visibility: hidden;
+}
+
+.show::after {
+    visibility: visible;
+    position: absolute;
+    right: 11.7%;
+    content: 'stop car:';
+}
