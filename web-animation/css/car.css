@@ -8,7 +8,7 @@ body {
 .background {
     height: 75vh;
     width: 56vw;
-    background: url(/assets/Img_1.png);
+    background: url(../assets/Img_1.png);
     border: 2px solid;
     background-repeat: no-repeat;
     position: relative;
@@ -24,7 +24,7 @@ body {
     width: 500%;
     /* margin: 5rem; */
     display: block;
-    background-image: url(/assets/Img_02.png);
+    background-image: url(../assets/Img_02.png);
     position: absolute;
     /* bottom: 19%; */
     bottom: 0%;
