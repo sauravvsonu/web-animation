@@ -92,6 +92,7 @@ body {
     visibility: hidden;
 }
 
+
 .show::after {
     visibility: visible;
     position: absolute;
